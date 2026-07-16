@@ -701,6 +701,15 @@
           max-width: 280px;
           margin: 0 auto 24px auto;
         }
+        /* 2. Ocultar el botón de WhatsApp del header en móviles */
+        header .cta-btn {
+          display: none;
+        }
+
+        /* 3. Ajuste opcional para que el menú se vea mejor */
+        .menu-toggle {
+          font-size: 2rem;
+        }
         nav.links {
           position: fixed;
           inset: 64px 0 0 0;
@@ -1058,9 +1067,6 @@
             <h2>Así se ven nuestras arepas</h2>
             <div class="bar"></div>
           </div>
-          <p class="section-sub">
-            Fotos reales de nuestras arepas y preparación.
-          </p>
           <div class="gallery">
             <figure>
               <img
@@ -1137,7 +1143,13 @@
                 Domicilios a tu casa, oficina, o como regalo especial.
               </p>
               <div class="delivery-badges">
-                <span class="badge">WhatsApp 310 297 1326</span>
+                <a
+                  class="badge"
+                  href="https://wa.me/573102971326?text=Hola%20Arepas%20La%20Chocolera%2C%20quiero%20hacer%20un%20pedido"
+                  target="_blank"
+                  rel="noopener"
+                  >WhatsApp 310 297 1326</a
+                >
                 <span class="badge">Rappi</span>
                 <span class="badge">DiDi Food</span>
               </div>
